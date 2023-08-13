@@ -14,3 +14,5 @@ function myclick(){
     document.querySelector('.out').innerHTML = a;
 
 }
+
+//zaebalo nemnogo
