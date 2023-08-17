@@ -1,5 +1,3 @@
-//const API_KEY_YANDEX = '85eaff1b-ef9e-4c11-89bc-ca01d1ae43de'
-//const API_URL_GEO_DATA = `https://geocode-maps.yandex.ru/1.x/?apikey=${API_KEY_YANDEX}&geocode=${place_name}&format=json`
 
 //const API_OPEN_METEO = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${coordinates[0]}&longitude=${coordinates[1]}&hourly=pm10,pm2_5`
 
@@ -15,4 +13,8 @@ function myclick(){
 
 }
 
-//zaebalo nemnogo
+const API_KEY_YANDEX = '99a52a8a-e301-4a65-a539-91d86dcb0109'
+const API_URL_GEO_DATA = `https://geocode-maps.yandex.ru/1.x/?apikey=API_KEY_YANDEX&geocode=Москва,+Тверская+улица,+дом+7&format=json`
+
+
+
