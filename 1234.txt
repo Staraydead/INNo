@@ -1,7 +1,7 @@
-’   ”   …         
-œ   »   «   ƒ   ¿   
-¡   Œ   –   »   —   
-¡   ”   –   ƒ   ¿   
+√ï   √ì   √â         
+√è   √à   √á   √Ñ   √Ä   
+√Å   √é   √ê   √à   √ë   
+√Å   √ì   √ê   √Ñ   √Ä   
 8               
 96   56   8   484   /   
    96         /   
@@ -10,7 +10,7 @@
             /   
             /   
                
-               
+https://ru.hexlet.io/qna/javascript/questions/kak-preobrazovat-stroku-v-massiv-js               
                
                
                
