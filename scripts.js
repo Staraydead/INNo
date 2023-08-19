@@ -3,28 +3,28 @@ console.log('HELLO NIGA')
 document.querySelector('button').onclick = myclick;
 
 function myclick(){
-    //console.log('Work');
-    let a = document.querySelector('.City').value;
-    console.log(a);
-    document.querySelector('.out1').innerHTML = 'Выбранный город: '+a;
+  //console.log('Work');
+  let a = document.querySelector('.City').value;
+  console.log(a);
+  document.querySelector('.out1').innerHTML = 'Выбранный город: '+a;
 
-let place_name = a
-console.log(place_name)
+  let place_name = a
+  console.log(place_name)
 
-const API_KEY_YANDEX = '99a52a8a-e301-4a65-a539-91d86dcb0109'
-const API_URL_GEO_DATA = `https://geocode-maps.yandex.ru/1.x/?apikey=${API_KEY_YANDEX}&geocode=${place_name}&format=json`
+  const API_KEY_YANDEX = '99a52a8a-e301-4a65-a539-91d86dcb0109'
+  const API_URL_GEO_DATA = `https://geocode-maps.yandex.ru/1.x/?apikey=${API_KEY_YANDEX}&geocode=${place_name}&format=json`
 
-console.log(API_URL_GEO_DATA)
+  console.log(API_URL_GEO_DATA)
 
-fetch(API_URL_GEO_DATA)
-.then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    //console.log(data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos);
-    //let b = get(data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos);
-    document.querySelector('.out2').innerHTML = 'Координаты: '+data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
-  });
+  fetch(API_URL_GEO_DATA)
+    .then((response) => {
+        return response.json();
+      })
+    .then((data) => {
+      //console.log(data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos);
+      //let b = get(data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos);
+      document.querySelector('.out2').innerHTML = 'Координаты: '+data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
+    });
 
   async function getcord() {
     let cord = 0
@@ -74,8 +74,6 @@ fetch(API_URL_GEO_DATA)
 
           console.log(arrV[0]);
 
-
-
           let table = document.querySelector('.tbody');
           table.innerHTML = '';
           for (let subArr of arrV) {
@@ -89,14 +87,11 @@ fetch(API_URL_GEO_DATA)
             
             table.appendChild(tr);
           }
-              
-          
-          //document.querySelector('.tbody').innerHTML = dirt.time;
                   
         }
         getdirt();
 
-    }
-   getcord();
+      }
+    getcord();
 
 }
